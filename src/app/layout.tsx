@@ -18,7 +18,19 @@ export default function RootLayout({
       <body>
         <div className="app">
           <AntdRegistry>
-            <ConfigProvider>{children}</ConfigProvider>
+            <ConfigProvider
+              theme={{
+                token: {},
+                components: {
+                  Menu: {
+                    itemBg: "transparrent",
+                    colorBorder: "transparrent",
+                  },
+                },
+              }}
+            >
+              {children}
+            </ConfigProvider>
           </AntdRegistry>
         </div>
       </body>

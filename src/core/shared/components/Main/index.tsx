@@ -4,9 +4,11 @@ import { MainContent } from "./components/MainContent";
 
 export const Main = () => {
   return (
-    <main className="bg-black">
-      <MainMenu />
-      <MainContent />
+    <main className="bg-transparent w-full">
+      <div className="h-full flex ">
+        <MainMenu />
+        <MainContent />
+      </div>
     </main>
   );
 };

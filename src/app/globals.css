@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/*https://colorscheme.ru/#3q11Tw0w0w0w0*/
+
+.app {
   font-weight: 700;
   font-size: medium;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/2018-04-30-Monsa_gradient.jpg");
 }
 .header {
-  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+  /* background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+   */
+  background: transparent;
+}
+main {
+  height: 100%;
+  position: fixed;
 }
