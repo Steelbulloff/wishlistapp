@@ -5,32 +5,37 @@ import {
   WhatsAppOutlined,
   YoutubeOutlined,
 } from "@ant-design/icons";
-import { Flex, Typography } from "antd";
+import { Button, Flex, Image, Typography } from "antd";
+import Link from "next/link";
 export const Header = () => {
   return (
     <header className="header">
       <Flex justify="space-around" align="center">
-        <Typography>Logotipe Zaloppa</Typography>
+        <Link href="/">
+          <Image
+            src="https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg"
+            preview={false}
+            height={32}
+          />
+        </Link>
 
-        <Typography>Заглушка для фичи</Typography>
+        <Button>Заглушка для фичи</Button>
 
         <Flex justify="space-between" gap={50}>
           <Flex gap={30}>
-            <WhatsAppOutlined />
-            <TwitterOutlined />
-            <YoutubeOutlined />
+            <Button icon={<WhatsAppOutlined />} />
+            <Button icon={<TwitterOutlined />} />
+            <Button icon={<YoutubeOutlined />} />
           </Flex>
 
           <Flex gap={30}>
-            <AlertOutlined />
-            <Flex align="center">
-              <UserOutlined />
-              <Typography>Профиль</Typography>
-            </Flex>
+            <Button icon={<AlertOutlined />} />
+            <Link href="/account">
+              <Button icon={<UserOutlined />}>Профиль</Button>
+            </Link>
           </Flex>
         </Flex>
       </Flex>
     </header>
   );
 };
-export default Header;

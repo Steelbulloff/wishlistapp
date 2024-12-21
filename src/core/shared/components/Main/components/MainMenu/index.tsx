@@ -1,16 +1,35 @@
 import {
-  ContainerOutlined,
-  DesktopOutlined,
-  PieChartOutlined,
   PoweroffOutlined,
+  RadarChartOutlined,
+  TeamOutlined,
+  UserOutlined,
+  WomanOutlined,
 } from "@ant-design/icons";
 import { Button, Flex, Menu } from "antd";
+import Link from "next/link";
 
 export const MainMenu = () => {
   const items = [
-    { key: "1", icon: <PieChartOutlined />, label: "Option 1" },
-    { key: "2", icon: <DesktopOutlined />, label: "Option 2" },
-    { key: "3", icon: <ContainerOutlined />, label: "Option 3" },
+    {
+      key: "1",
+      icon: <UserOutlined />,
+      label: <Link href={"/account"}>Моя страница</Link>,
+    },
+    {
+      key: "2",
+      icon: <TeamOutlined />,
+      label: <Link href={"/account/friends"}>Друзья</Link>,
+    },
+    {
+      key: "3",
+      icon: <RadarChartOutlined />,
+      label: <Link href={"/"}>Фича</Link>,
+    },
+    {
+      key: "4",
+      icon: <WomanOutlined />,
+      label: <Link href={"/account/settings"}>Настройки</Link>,
+    },
   ];
   return (
     <Flex justify="space-between" vertical style={{ height: "90%" }}>

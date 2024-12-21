@@ -1,11 +1,11 @@
 import { Header, Main } from "@/core/shared/components";
 import React from "react";
 
-export default function Home() {
+export default function Account() {
   return (
     <>
       <Header />
-      {/* Компонент с лендингом */}
+      <Main />
     </>
   );
 }

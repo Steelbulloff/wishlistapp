@@ -1,14 +1,15 @@
 import React from "react";
 import { MainMenu } from "./components/MainMenu";
-import { MainContent } from "./components/MainContent";
+import { Flex } from "antd";
+import { MainContentRouter } from "../../Router/Router";
 
 export const Main = () => {
   return (
     <main className="bg-transparent w-full">
-      <div className="h-full flex ">
+      <Flex style={{ height: "100%" }}>
         <MainMenu />
-        <MainContent />
-      </div>
+        <MainContentRouter />
+      </Flex>
     </main>
   );
 };
