@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { ConfigProvider } from "antd";
+import { Header } from "@/core/shared/components";
 
 export const metadata: Metadata = {
   title: "Show what you wish",
@@ -29,6 +30,7 @@ export default function RootLayout({
                 },
               }}
             >
+              <Header />
               {children}
             </ConfigProvider>
           </AntdRegistry>

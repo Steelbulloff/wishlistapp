@@ -8,7 +8,6 @@ export const Main = () => {
     <main className="bg-transparent w-full">
       <Flex style={{ height: "100%" }}>
         <MainMenu />
-        <MainContentRouter />
       </Flex>
     </main>
   );

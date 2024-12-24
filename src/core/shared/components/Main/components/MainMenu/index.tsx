@@ -13,7 +13,7 @@ export const MainMenu = () => {
     {
       key: "1",
       icon: <UserOutlined />,
-      label: <Link href={"/account"}>Моя страница</Link>,
+      label: <Link href={"/account/profile"}>Моя страница</Link>,
     },
     {
       key: "2",

@@ -30,7 +30,7 @@ export const Header = () => {
 
           <Flex gap={30}>
             <Button icon={<AlertOutlined />} />
-            <Link href="/account">
+            <Link href="/account/profile">
               <Button icon={<UserOutlined />}>Профиль</Button>
             </Link>
           </Flex>

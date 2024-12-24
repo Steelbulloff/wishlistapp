@@ -7,7 +7,7 @@ import Settings from "@/app/account/settings/page";
 import { usePathname } from "next/navigation"; // Импортируйте usePathname
 
 export const MainContentRouter = () => {
-  const pathname = usePathname(); // Получите текущий путь
+  const pathname = usePathname();
 
   return (
     <>
